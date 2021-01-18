@@ -38,6 +38,10 @@ const routes: Routes = [
   {
     path: 'card',
     loadChildren: () => import('./pages/card/card.module').then( m => m.CardPageModule)
+  },
+  {
+    path: 'checkobx',
+    loadChildren: () => import('./pages/checkobx/checkobx.module').then( m => m.CheckobxPageModule)
   }
 ];
 
