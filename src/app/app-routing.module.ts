@@ -42,6 +42,10 @@ const routes: Routes = [
   {
     path: 'checkobx',
     loadChildren: () => import('./pages/checkobx/checkobx.module').then( m => m.CheckobxPageModule)
+  },
+  {
+    path: 'chip',
+    loadChildren: () => import('./pages/chip/chip.module').then( m => m.ChipPageModule)
   }
 ];
 
