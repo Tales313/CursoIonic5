@@ -76,6 +76,11 @@ export class AppComponent implements OnInit {
       title: 'Infinite Scroll',
       url: 'infinitescroll',
       icon: 'construct'
+    },
+    {
+      title: 'Input',
+      url: 'input',
+      icon: 'construct'
     }
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
