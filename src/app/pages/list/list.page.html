@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>List</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h3>Lista com texto</h3>
+  <ion-list>
+    <ion-item><ion-label>Acabate</ion-label></ion-item>
+    <ion-item><ion-label>Maça</ion-label></ion-item>
+    <ion-item><ion-label>Goiaba</ion-label></ion-item>
+  </ion-list>
+
+  <h3>Lista Form</h3>
+  <ion-list>
+    <ion-item>
+      <ion-label>Input</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Checkbox</ion-label>
+      <ion-checkbox slot="start"></ion-checkbox>
+    </ion-item>
+    <ion-item>
+      <ion-label>Radio</ion-label>
+      <ion-radio slot="start"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>Toggle</ion-label>
+      <ion-toggle slot="end"></ion-toggle>
+    </ion-item>
+  </ion-list>
+
+  <h3>Lista com avatar</h3>
+  <ion-list>
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="https://avatars1.githubusercontent.com/u/601061?s=460&v=4">
+      </ion-avatar>
+      <ion-label>
+        <h2>Tales Araujo</h2>
+        <h3>Desenvolvedor</h3>
+        <p>Na empresa Conductor Tecnologia</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-item *ngFor="let fruta of frutas">
+      <ion-label>{{fruta}}</ion-label>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
