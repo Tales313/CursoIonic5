@@ -106,6 +106,11 @@ export class AppComponent implements OnInit {
       title: 'Select',
       url: 'select',
       icon: 'construct'
+    },
+    {
+      title: 'Toggle',
+      url: 'toggle',
+      icon: 'construct'
     }
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
