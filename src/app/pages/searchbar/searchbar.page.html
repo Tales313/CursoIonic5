@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Search Bar</ion-title>
+  </ion-toolbar>
+
+  <ion-toolbar color="secondary">
+    <ion-searchbar (keyup)="filtrar($event)" color="light" [(ngModel)]="busca"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let pessoa of pessoasFiltradas">
+      {{pessoa.nome}}
+    </ion-item>
+  </ion-list>
+
+  <h1>{{busca}}</h1>
+</ion-content>
