@@ -96,6 +96,11 @@ export class AppComponent implements OnInit {
       title: 'Refresher',
       url: 'refresher',
       icon: 'construct'
+    },
+    {
+      title: 'Reorder',
+      url: 'reorder',
+      icon: 'construct'
     }
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
