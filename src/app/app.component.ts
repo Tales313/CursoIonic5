@@ -141,6 +141,11 @@ export class AppComponent implements OnInit {
       title: 'Popover',
       url: 'popover',
       icon: 'construct'
+    },
+    {
+      title: 'Radio',
+      url: 'radio',
+      icon: 'construct'
     }
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
