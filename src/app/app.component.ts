@@ -16,6 +16,11 @@ export class AppComponent implements OnInit {
       title: 'Componentes Visuais',
       url: 'componentes-visuais',
       icon: 'construct'
+    },
+    {
+      title: 'Componentes Nativos',
+      url: 'componentes-nativos',
+      icon: 'construct'
     }
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
