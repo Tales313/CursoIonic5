@@ -4,11 +4,14 @@
       <ion-back-button></ion-back-button>
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>Componentes Nativos</ion-title>
+    <ion-title>Câmera</ion-title>
   </ion-toolbar>
 </ion-header>
 
-
 <ion-content>
-  <ion-button expand="block" (click)="showPage('camera')">Câmera</ion-button>
+  <ion-button expand="block" (click)="tirarFoto()">TIRAR FOTO</ion-button>
+
+  <ion-card [hidden]="!foto">
+    <img src="{{foto}}">
+  </ion-card>
 </ion-content>

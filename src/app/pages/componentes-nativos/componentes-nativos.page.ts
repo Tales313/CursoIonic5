@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {NavController} from '@ionic/angular';
 
 @Component({
   selector: 'app-componentes-nativos',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ComponentesNativosPage implements OnInit {
 
-  constructor() { }
+  constructor(private navCtrl: NavController) { }
 
   ngOnInit() {
+  }
+
+  showPage(url: string) {
+    this.navCtrl.navigateForward(url);
   }
 
 }
