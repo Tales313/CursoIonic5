@@ -21,6 +21,11 @@ export class AppComponent implements OnInit {
       title: 'Componentes Nativos',
       url: 'componentes-nativos',
       icon: 'construct'
+    },
+    {
+      title: 'Api Externa',
+      url: 'api',
+      icon: 'construct'
     }
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];

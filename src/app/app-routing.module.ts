@@ -142,6 +142,10 @@ const routes: Routes = [
   {
     path: 'texttospeech',
     loadChildren: () => import('./pages/texttospeech/texttospeech.module').then( m => m.TexttospeechPageModule)
+  },
+  {
+    path: 'api',
+    loadChildren: () => import('./pages/api/api.module').then( m => m.ApiPageModule)
   }
 ];
 
