@@ -1,0 +1,6 @@
+keytool -genkey -v -keystore key-name.keystore -alias cursoionic5Key -keyalg RSA -keysize 2048 -validity 10000
+
+jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore ./key-name.keystore ./platforms/android/app/build/outputs/apk/release/app-release-unsigned.apk cursoionic5Key
+
+zipalign -v 4 /home/local/CONDUCTOR/tales.medeiros/Documentos/IONIC/fontes/CursoIonic5/platforms/android/app/build/outputs/apk/release/app-release-unsigned.apk /home/local/CONDUCTOR/tales.medeiros/Documentos/IONIC/fontes/CursoIonic5/CursoIonic5-0.0.1.apk
+
