@@ -16,7 +16,6 @@ import {ModalInternoComponent} from '../../components/modal-interno/modal-intern
     IonicModule,
     PopoverPageRoutingModule
   ],
-  declarations: [PopoverPage, ModalInternoComponent],
-  entryComponents: [ModalInternoComponent]
+  declarations: [PopoverPage]
 })
 export class PopoverPageModule {}
